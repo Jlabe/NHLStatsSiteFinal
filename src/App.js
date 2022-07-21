@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <div className="content">
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/Jlabe" exact component={Home}>
             <Home />
           </Route>
           <Route exact path="/LeagueStats">
