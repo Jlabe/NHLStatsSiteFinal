@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import Home from './Home';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, useHistory} from 'react-router-dom';
 import LeagueStats from './LeagueStats';
 import Table from './Table';
 import TeamStats from './TeamStats';
