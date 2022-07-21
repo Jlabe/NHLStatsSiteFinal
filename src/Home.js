@@ -14,7 +14,7 @@ const Home = () => {
                     NHL Stats
                 </div>
                 <div class="display-6 text-white">
-                        Find the stats you are looking for!
+                        "Find the stats you are looking for!"
                 </div>
               </h1>
             </div>
