@@ -1,0 +1,36 @@
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  color: #2234d6;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #2234d6;
+}
+.navbar h1 {
+  color: #2234d6;
+}
+
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  margin: 40px auto;
+  padding: 20px;
+}
+.background{
+  background: rgb(39, 104, 245);
+}
+
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(360deg, #0951A2 0%, #CE860B 100%);
+  backgroundSize: 'cover'
+}
+
