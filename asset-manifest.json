@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/NHLStatsSiteFinal/static/css/main.3d2d5b8d.css",
-    "main.js": "/NHLStatsSiteFinal/static/js/main.4bf4760c.js",
-    "static/js/787.54f9f356.chunk.js": "/NHLStatsSiteFinal/static/js/787.54f9f356.chunk.js",
-    "static/media/NhlLogos.jpg": "/NHLStatsSiteFinal/static/media/NhlLogos.5b9ea4c4db0631b04599.jpg",
-    "index.html": "/NHLStatsSiteFinal/index.html",
-    "main.3d2d5b8d.css.map": "/NHLStatsSiteFinal/static/css/main.3d2d5b8d.css.map",
-    "main.4bf4760c.js.map": "/NHLStatsSiteFinal/static/js/main.4bf4760c.js.map",
-    "787.54f9f356.chunk.js.map": "/NHLStatsSiteFinal/static/js/787.54f9f356.chunk.js.map"
+    "main.css": "/NHLStatsSiteFinal/Jlabe/static/css/main.3d2d5b8d.css",
+    "main.js": "/NHLStatsSiteFinal/Jlabe/static/js/main.33c8d406.js",
+    "static/js/787.54f9f356.chunk.js": "/NHLStatsSiteFinal/Jlabe/static/js/787.54f9f356.chunk.js",
+    "static/media/NhlLogos.jpg": "/NHLStatsSiteFinal/Jlabe/static/media/NhlLogos.5b9ea4c4db0631b04599.jpg",
+    "index.html": "/NHLStatsSiteFinal/Jlabe/index.html",
+    "main.3d2d5b8d.css.map": "/NHLStatsSiteFinal/Jlabe/static/css/main.3d2d5b8d.css.map",
+    "main.33c8d406.js.map": "/NHLStatsSiteFinal/Jlabe/static/js/main.33c8d406.js.map",
+    "787.54f9f356.chunk.js.map": "/NHLStatsSiteFinal/Jlabe/static/js/787.54f9f356.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3d2d5b8d.css",
-    "static/js/main.4bf4760c.js"
+    "static/js/main.33c8d406.js"
   ]
 }
