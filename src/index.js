@@ -4,17 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { IntlProvider} from "react-intl";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const local = navigator.language;
-
 root.render(
   <React.StrictMode>
-      <IntlProvider >
           <App />
-      </IntlProvider>
   </React.StrictMode>
 );
 

@@ -180,6 +180,16 @@ const PlayerStatPage = () => {
                                 </Card.Text>
                             </Card.Body>
                         </Card>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <Card style={{ width: '18rem' }}>
+                            <h3 style={{color:"black", justifyContent : "center", alignContent : "center", display: 'flex'}}>Stat Table Legend</h3>
+                            <p style={{color:"black", justifyContent : "center", alignContent : "center", display: 'flex'}}>
+                                GP = Games Played, <br/>    G = Goals,  <br/>    A = Assists,  <br/>    PTS = Points,  <br/>    +/- = Plus/Minus
+                            </p>
+                        </Card>
+
                     </Col>
                     <Col>
                         <h1 style={{color: 'white', justifyContent:'center', alignItems:'center', display: 'flex'}}>Regular Season</h1>

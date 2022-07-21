@@ -34,3 +34,8 @@ body{
   backgroundSize: 'cover'
 }
 
+.dropdown-menu {
+  height: 170px;
+  overflow-y: scroll;
+}
+

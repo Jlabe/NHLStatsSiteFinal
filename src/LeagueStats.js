@@ -9,6 +9,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import teamStats from "./TeamStats";
+import Card from "react-bootstrap/Card";
 
 const LeagueStats = () => {
 
@@ -121,15 +122,19 @@ const LeagueStats = () => {
         setUrl(urlString);
         console.log(urlString);
     }
-
-    if (standingType == "byLeague"){
         return (
             <div className='LeagueStats'>
                 <div>
+                    <h1 style={{color: "white", justifyContent : "center", alignContent : "center", display: 'flex'}}> League Standings</h1>
+                    <h5 style={{color: "white", justifyContent : "center", alignContent : "center", display: 'flex'}}> To view league standings of a certain year, simply click the dropdown and select the year you would like to view. </h5>
                     <Container>
                         <Row>
                             <Col>
-                                <DropdownButton id="dropdown-basic-button" title="Select A Season"
+                                <br/>
+                                <DropdownButton
+                                    style={{color: "white", justifyContent : "center", alignContent : "center", display: 'flex'}}
+                                    id="dropdown-basic-button"
+                                    title="Select A Season"
                                                 onSelect={handleSelect}
                                 >
                                     <Dropdown.Item eventKey="2022">2022</Dropdown.Item>
@@ -140,67 +145,51 @@ const LeagueStats = () => {
                                     <Dropdown.Item eventKey="2017">2017</Dropdown.Item>
                                     <Dropdown.Item eventKey="2016">2016</Dropdown.Item>
                                     <Dropdown.Item eventKey="2015">2015</Dropdown.Item>
-                                </DropdownButton>
-                            </Col>
-                            <Col>
-                                <DropdownButton id="dropdown-basic-button" title="Select A Season"
-                                                onSelect={handleSelectViewType}>
-                                    <Dropdown.Item eventKey="byLeague">League</Dropdown.Item>
-                                    <Dropdown.Item eventKey="byConference">Conference</Dropdown.Item>
-                                    <Dropdown.Item eventKey="byDivision">Division</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2014">2014</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2013">2013</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2012">2012</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2011">2011</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2010">2010</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2009">2009</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2008">2008</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2007">2007</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2006">2006</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2006">2006</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2004">2004</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2003">2003</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2002">2002</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2001">2001</Dropdown.Item>
+                                    <Dropdown.Item eventKey="2000">2000</Dropdown.Item>
+                                    <Dropdown.Item eventKey="1999">1999</Dropdown.Item>
                                 </DropdownButton>
                             </Col>
                         </Row>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
                     </Container>
-                    <h1>League Standings for {season} Season</h1>
+                    <h1 style={{color: "white", justifyContent : "center", alignContent : "center", display: 'flex'}}> League Standings for the {season} Season</h1>
                 </div>
                 {data && <Table columnData={COLUMNSLEAGUE} tableData={teamStandingsLeague}>
                 </Table>}
-            </div>
-        );
-    }else if (standingType == "byConference"){
-        return (
-            <div className='LeagueStats'>
-                <div>
-                    <Container>
-                        <Row>
-                            <Col>
-                                <DropdownButton id="dropdown-basic-button" title="Select A Season"
-                                                onSelect={handleSelect}
-                                >
-                                    <Dropdown.Item eventKey="2022">2022</Dropdown.Item>
-                                    <Dropdown.Item eventKey="2021">2021</Dropdown.Item>
-                                    <Dropdown.Item eventKey="2020">2020</Dropdown.Item>
-                                    <Dropdown.Item eventKey="2019">2019</Dropdown.Item>
-                                    <Dropdown.Item eventKey="2018">2018</Dropdown.Item>
-                                    <Dropdown.Item eventKey="2017">2017</Dropdown.Item>
-                                    <Dropdown.Item eventKey="2016">2016</Dropdown.Item>
-                                    <Dropdown.Item eventKey="2015">2015</Dropdown.Item>
-                                </DropdownButton>
-                            </Col>
-                            <Col>
-                                <DropdownButton id="dropdown-basic-button" title="Select A Season"
-                                                onSelect={handleSelectViewType}>
-                                    <Dropdown.Item eventKey="byLeague">League</Dropdown.Item>
-                                    <Dropdown.Item eventKey="byConference">Conference</Dropdown.Item>
-                                    <Dropdown.Item eventKey="byDivision">Division</Dropdown.Item>
-                                </DropdownButton>
-                            </Col>
-                        </Row>
-                    </Container>
-                    <h1>League Standings for {season} Season</h1>
+                <br/>
+                <row style={{color:"black", justifyContent : "center", alignContent : "center", display: 'flex'}}>
+                    <Card style={{ width: '25rem' }}>
+                        <h3 style={{color:"black", justifyContent : "center", alignContent : "center", display: 'flex'}}>League Standings Legend</h3>
+                        <p style={{color:"black", justifyContent : "center", alignContent : "center", display: 'flex'}}>
+                            GP = Games Played, <br/>    G = Goals,  <br/>    A = Assists,  <br/>    PTS = Points,  <br/>    +/- = Plus/Minus
+                        </p>
+                    </Card>
+                </row>
 
-
-                </div>
-                {data && <Table columnData={COLUMNSLEAGUE} tableData={teamStandingsConference[1]}>
-                </Table>}
-                {data && <Table columnData={COLUMNSLEAGUE} tableData={teamStandingsConference[2]}>
-                </Table>}
             </div>
         );
     }
 
-
-}
  
 export default LeagueStats;

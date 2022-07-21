@@ -6,6 +6,7 @@ import Table from 'react-bootstrap/Table';
 import {useState} from "react";
 import {Link} from "react-router-dom";
 import {render} from "react-dom";
+import Card from "react-bootstrap/Card";
 
 const TeamStats = () => {
 
@@ -197,10 +198,15 @@ const TeamStats = () => {
                 </tr>
                 </tbody>
             </Table>
-            <h3 style={{color:"white", justifyContent : "center", alignContent : "center", display: 'flex'}}>Legend</h3>
-            <p style={{color:"white", justifyContent : "center", alignContent : "center", display: 'flex'}}>
-                GP = Games Played, <br/>    G = Goals,  <br/>    A = Assists,  <br/>    PTS = Points,  <br/>    +/- = Plus/Minus
-            </p>
+
+            <row style={{color:"black", justifyContent : "center", alignContent : "center", display: 'flex'}}>
+                <Card style={{ width: '25rem' }}>
+                    <h3 style={{color:"black", justifyContent : "center", alignContent : "center", display: 'flex'}}>Legend</h3>
+                    <p style={{color:"black", justifyContent : "center", alignContent : "center", display: 'flex'}}>
+                        GP = Games Played, <br/>    G = Goals,  <br/>    A = Assists,  <br/>    PTS = Points,  <br/>    +/- = Plus/Minus
+                    </p>
+                </Card>
+            </row>
 
         </div>
 

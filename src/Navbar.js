@@ -1,6 +1,7 @@
 import { Navbar, Nav, Container, Form, Button, FormControl } from 'react-bootstrap';
 import './style.css';
-import {useState} from "react";
+import {useContext, useState} from "react";
+import {Context} from "react-intl/src/components/injectIntl";
 
 const NavbarConst = () => {
 
@@ -38,6 +39,7 @@ const NavbarConst = () => {
       <Nav.Link href="/PlayerStats">Player Stats</Nav.Link>
       <Nav.Link href="/LeagueStats">League Stats</Nav.Link>
     </Nav>
+
     <Form className="d-flex">
         <FormControl
             onChange={handleEnterText}
