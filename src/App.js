@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import Home from './Home';
-import {BrowserRouter as Router, Route, Switch, useHistory} from 'react-router-dom';
+import {BrowserRouter as Router, HashRouter, Route, Switch, useHistory} from 'react-router-dom';
 import LeagueStats from './LeagueStats';
 import Table from './Table';
 import TeamStats from './TeamStats';
@@ -10,12 +10,12 @@ import SearchLanding from "./SearchLanding"
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
     <div className="App">
       <Navbar />
       <div className="content">
         <Switch>
-          <Route exact path="/Jlabe" exact component={Home}>
+          <Route exact path="/" >
             <Home />
           </Route>
           <Route exact path="/LeagueStats">
@@ -36,7 +36,7 @@ function App() {
         </Switch>
       </div>
     </div>
-    </Router>
+    </HashRouter>
     
   );
 }
